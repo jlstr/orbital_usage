@@ -7,8 +7,6 @@ app = FastAPI()
 def root():
   return { "message": "successfully created API" }
 
-@app.get("/messages")
-async def messages():
-  messages = await fetch_messages()
-
-  return messages
+# @app.get("/messages")
+# async def messages():
+#   return await fetch_messages()
