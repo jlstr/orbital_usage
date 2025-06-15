@@ -1,7 +1,7 @@
 import pytest
 from src.orbital_usage_api.calculations import calculate_credits, is_palindrome
 
-@pytest.mark.parametrize("text,expected", [
+@pytest.mark.parametrize("text, expected", [
   ("Short Message", pytest.approx(1.0, 0.01)),  # 1.0 because of unique bonus!
   ("Are there any restrictions on alterations or improvements?", pytest.approx(5.2, 0.01)),
   ("What are the indemnity provisions?", pytest.approx(2.9, 0.01)),
@@ -13,7 +13,7 @@ from src.orbital_usage_api.calculations import calculate_credits, is_palindrome
 def test_calculate_credits_various_cases(text, expected):
   assert calculate_credits(text) == expected
 
-@pytest.mark.parametrize("text,expected", [
+@pytest.mark.parametrize("text, expected", [
   ("madam", True),
   ("racecar", True),
   ("Was it a car or a cat I saw?", True),
