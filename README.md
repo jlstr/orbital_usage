@@ -101,7 +101,7 @@ poetry run pytest
 
 This command will:
 
-- Discover all test_*.py files under the tests/ folder
+- Discover all `test_*.py` files under the `tests/` folder
 - Run both sync and async test functions
 - Report results with detailed failure tracebacks if needed
 
@@ -163,11 +163,11 @@ OR
 
   FastAPI is a modern, high-performance Python web framework for building APIs with automatic validation and OpenAPI generation. See: https://fastapi.tiangolo.com/
 
-- Pydantic powers schema validation.
+- `Pydantic` powers schema validation.
 
-  Both `UsageRecord` and `UsageResponse` are defined using Pydantic models, making them directly serializable to and from JSON.
+  Both `UsageRecord` and `UsageResponse` are defined using `Pydantic` models, making them directly serializable to and from JSON.
 
-- Testing uses pytest and asyncio.
+- Testing uses `pytest` and `asyncio`.
 
   All async logic is tested using `pytest` with the help of `pytest-asyncio`. Tests are structured and readable
 
