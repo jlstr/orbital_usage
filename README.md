@@ -1,12 +1,12 @@
 # Orbital Usage API
 
-## Solution deployed to Render Cloud Application Platform
+## Render Cloud Application Platform
 
-> This project has been deployed to [Render Cloud Application Platform](https://render.com/) and can be found here: 
->
->[https://orbital-usage.onrender.com/usage](https://orbital-usage.onrender.com/usage).
->
->⚠️ Disclaimer: Render's Free Tier shuts down after 15 minutes of inactivity, you may see  a screen like this one if the service stopped and it's restarting...
+**This project has been deployed to [Render Cloud Application Platform](https://render.com/) and can be found here:**
+
+**[https://orbital-usage.onrender.com/usage](https://orbital-usage.onrender.com/usage).**
+
+> ⚠️ Disclaimer: Render's Free Tier shuts down after 15 minutes of inactivity, you may see  a screen like this one if the service stopped and it's restarting...
 
 ![Render loading screen](https://i.ibb.co/GQ5bNgnd/application-loading.jpg)
 
@@ -124,7 +124,7 @@ tests/test_usage_logic.py .............                              [100%]
 
 ## 🚀 Running the Project Locally
 
-For this instantiate the Uvicorn web server using the following command:
+To run the project locally, instantiate the Uvicorn web server using the following command:
 
 ```
 poetry run uvicorn src.orbital_usage_api.main:app --reload
@@ -151,26 +151,35 @@ OR
 
 ## 📝 Notes
 
-> Python isn’t my main language, but I’m comfortable working with it, if something looks off please bear with me.
->
-> I have worked mostly with other languages recently, so if anything seems non-idiomatic Python, I’m happy to adjust.
->
-> The Tech Stack for this Challenge I had to learn in a short timespan.
-
-## ⚠️ Assumptions
-
-- FastAPI framework was used for API building (`/usage` endpoint)
+- **FastAPI framework was used for API building (`/usage` endpoint)**
 
   FastAPI is a modern, high-performance Python web framework for building APIs with automatic validation and OpenAPI generation. See: https://fastapi.tiangolo.com/
 
-- `Pydantic` powers schema validation.
+- **`Pydantic` powers schema validation.**
 
   Both `UsageRecord` and `UsageResponse` are defined using `Pydantic` models, making them directly serializable to and from JSON.
 
-- Testing uses `pytest` and `asyncio`.
+- **Testing uses `pytest` and `asyncio`.**
 
   All async logic is tested using `pytest` with the help of `pytest-asyncio`. Tests are structured and readable
 
-- Built for mocking and testability.
+- **Credits Calculation per Message**
 
-  The core `compute_usage_report()` function is pure and async. It takes no parameters but depends on externally swappable data providers, making it ideal for unit tests.
+  Credits Calculation was carefully verified via Unit Tests. The expected value for a given Text sequence was first calculated manually and then hard-coded as the expected value for a given Unit Test, `pytest.approx` was used to give a slight room for an approximation error.
+
+- **Built for Mocking and Testability.**
+
+  The core `compute_usage_report()` function is pure and async. It takes no parameters but depends on externally swappable data providers, making it ideal for
+  Mocked unit tests.
+
+- **Report Name**
+
+  As per requirements, the `report_name` is omitted in the response object using an optional field that defaults to a `null` (`None`) value when it's not available.
+
+## 🖊️ Wrap-up
+
+> - Python isn’t my main language, but I’m comfortable working with it, if something looks off please bear with me.
+>
+> - I have worked mostly with other languages recently, so if anything seems non-idiomatic Python, I’m happy to adjust.
+>
+> - The Tech Stack for this Challenge I had to learn in a short timespan, but I have used Flask and DJango some years ago

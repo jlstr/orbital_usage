@@ -11,6 +11,7 @@ def calculate_credits(text: str) -> float:
   # Rules for Word Length Multipliers:
   for word in words:
     word_length = len(word)
+
     if word_length <= 3:
       word_cost += 0.1
     elif word_length <= 7:
