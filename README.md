@@ -62,7 +62,7 @@ To activate the Poetry virtual environment:
 source .venv/bin/activate
 ```
 
-### 🏗️ Project Structure
+## 🏗️ Project Structure
 
 ```
 orbital_usage_api/
@@ -85,7 +85,7 @@ orbital_usage_api/
 │
 └── README.md
 ```
-### ✅ Running Tests
+## ✅ Running Tests
 
 To execute all tests, simply run from the root:
 
@@ -116,7 +116,7 @@ tests/test_usage_logic.py .............                              [100%]
 ============================= 21 passed in 0.29s =============================
 ```
 
-### 🚀 Running the Project Locally
+## 🚀 Running the Project Locally
 
 For this instantiate the Uvicorn web server using the following command:
 
@@ -143,7 +143,7 @@ OR
 
 [http://localhost:8000/usage](http://localhost:8000/usage)
 
-### 📝 Notes
+## 📝 Notes
 
 - Python isn’t my main language, but I’m comfortable working with it, if something looks off please bear with me.
 
@@ -151,7 +151,7 @@ OR
 
 - The Tech Stack for this Challenge I had to learn in a short timespan.
 
-### ⚠️ Assumptions
+## ⚠️ Assumptions
 
 - FastAPI framework was used for API building (`/usage` endpoint)
 
