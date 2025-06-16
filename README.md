@@ -147,7 +147,7 @@ OR
 
 > Python isn’t my main language, but I’m comfortable working with it, if something looks off please bear with me.
 
-> I have worked mostly in other languages recently, so if anything seems non-idiomatic Python, I’m happy to adjust.
+> I have worked mostly with other languages recently, so if anything seems non-idiomatic Python, I’m happy to adjust.
 
 > The Tech Stack for this Challenge I had to learn in a short timespan.
 
