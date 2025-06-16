@@ -12,4 +12,4 @@ async def calculate_usage():
 
 @app.get("/")
 def root():
-  return { message: "Welcome", success: True }
+  return { "message": "Welcome", "success": True }

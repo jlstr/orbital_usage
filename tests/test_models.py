@@ -63,7 +63,7 @@ def test_invalid_usage_response_structure():
   with pytest.raises(ValidationError) as validation:
     UsageResponse(usage = [
       {
-        "id": 123,
+        "id": 1234,
         "timestamp": "2024-06-13T13:00:00Z",
         "credits_used": 3.0
       }
