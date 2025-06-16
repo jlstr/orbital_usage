@@ -1,6 +1,8 @@
 import pytest
 from src.orbital_usage_api.calculations import calculate_credits, is_palindrome
 
+# pytest.approx will allow the expected value to have some error margin specified
+# in the second parameter
 @pytest.mark.parametrize("text, expected", [
   ("Short Message", pytest.approx(1.0, 0.01)),  # 1.0 because of unique bonus!
   ("Are there any restrictions on alterations or improvements?", pytest.approx(5.2, 0.01)),
