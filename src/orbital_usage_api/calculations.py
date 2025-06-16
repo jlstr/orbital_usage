@@ -8,7 +8,7 @@ def calculate_credits(text: str) -> float:
   words = re.findall(r"[a-zA-Z'-]+", text)
   word_cost = 0
 
-  # Rules for Word Length Multipliers...
+  # Rules for Word Length Multipliers:
   for word in words:
     word_length = len(word)
     if word_length <= 3:
