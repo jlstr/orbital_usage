@@ -2,7 +2,7 @@
 
 > This project has been deployed to [Render Cloud Application Platform](https://render.com/) and can be found here: [https://orbital-usage.onrender.com/usage](https://orbital-usage.onrender.com/usage). ⚠️ Disclaimer: Render's Free Tier shuts down after 15 minutes of inactivity, you may see  a screen like this one if the service stopped and it's restarting...
 
-![Render loading screen](https://ibb.co/jkr1s7b8)
+![Render loading screen](https://i.ibb.co/GQ5bNgnd/application-loading.jpg)
 
 ## 📦 Installation of Required Dependencies
 
